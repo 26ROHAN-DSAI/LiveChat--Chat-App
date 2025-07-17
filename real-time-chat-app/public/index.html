@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Modal for entering username -->
+    <div id="name-modal">
+        <h2>Welcome to Chat App</h2>
+        <p>Please enter your name to join the chat</p>
+        <input id="username-input" type="text" placeholder="Your name..." />
+        <select id="gender-select">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button id="start-chat">Join Chat</button>
+    </div>
+
+    <!-- Chat application -->
+    <div id="chat-app" class="hidden">
+        <div id="chat-header">
+            <h3 id="current-room">General</h3> <!-- Default room name -->
+            <button id="toggle-theme">Toggle Theme</button>
+        </div>
+        <div id="chat-body">
+            <div id="sidebar">
+                <h4>Chat Rooms</h4>
+                <ul id="rooms">
+                    <li>General</li>
+                    <li>Design Talk</li>
+                    <li>Development</li>
+                    <li>Random</li>
+                </ul>
+                <h4>Active Users</h4>
+                <ul id="user-list"></ul> <!-- User list for private messaging -->
+            </div>
+            <div id="chat-container">
+                <ul id="messages"></ul>
+                <div id="typing-indicator" class="hidden">Someone is typing...</div>
+                <form id="chat-form">
+                    <input id="message-input" autocomplete="off" placeholder="Type a message..." />
+                    <button type="submit">Send</button>
+                </form>
+                <form id="file-form">
+                    <input type="file" id="file-input" />
+                    <button type="submit">Send File</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
