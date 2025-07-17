@@ -18,5 +18,5 @@ offering a fast and reliable alternative to traditional messaging platforms. The
 project will demonstrate proficiency in web development, integrating both 
 front-end and back-end technologies, while ensuring real-time performance 
 and data security. The application’s scalability allows for future 
-enhancements, such as voice and video calling, AI-driven chatbots, and multilanguage support, making LiveChat a versatile and feature-rich messaging 
+enhancements, such as voice and video calling, AI-driven chatbots, and multi language support, making LiveChat a versatile and feature-rich messaging 
 solution.
